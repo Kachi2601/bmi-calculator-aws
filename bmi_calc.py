@@ -34,4 +34,4 @@ def index():
         except (ValueError, TypeError):
             return "Invalid input. Please enter valid numbers."
 
-    return render_template("your_form.html")  # Replace with your actual HTML filename
+    return render_template("bmi_form.html")  # Replace with your actual HTML filename
