@@ -29,7 +29,7 @@ def index():
                 "It does not account for muscle mass, bone density, or body composition."
             )
 
-            return render_template("result.html", bmi=bmi, status=status, message=message) # Replace with your actual HTML filename
+            return render_template("results.html", bmi=bmi, status=status, message=message) # Replace with your actual HTML filename
 
         except (ValueError, TypeError): # Handle cases where input is not a valid number
             return "Invalid input. Please enter valid numbers."
