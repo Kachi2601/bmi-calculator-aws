@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"]) # Route for handling the BMI calculation form submission and displaying results
 def index():
     if request.method == "POST":
         try:
